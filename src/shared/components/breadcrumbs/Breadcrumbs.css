@@ -1,0 +1,21 @@
+.breadcrumbs {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0.5rem;
+	font-size: 0.7rem;
+	color: #ccd2db;
+}
+
+.breadcrumbs-menu {
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: '0.3rem 0.8rem';
+	border-radius: '5rem';
+}
+
+.breadcrumbs-menu:hover {
+	color: #4c5968;
+	transition: 0.3s ease-in-out;
+}
