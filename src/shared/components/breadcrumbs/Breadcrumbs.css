@@ -19,3 +19,10 @@
 	color: #4c5968;
 	transition: 0.3s ease-in-out;
 }
+
+.active-menu {
+	background-color: '#aeb8c4';
+	color: '#ffffff';
+	padding: '0.3rem 0.8rem';
+	border-radius: '5rem';
+}

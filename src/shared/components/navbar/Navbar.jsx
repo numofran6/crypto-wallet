@@ -25,7 +25,7 @@ export const Navbar = () => {
 			</button>
 
 			{toggleDropdown && (
-				<ul className="space-vertically dropdown-menu">
+				<ul className="space-vertically dropdown-menu card-shadow">
 					<li className="dropdown-link">
 						<button className="align-link-horizontally">
 							Edit <BiSolidEdit className="dropdown-link-icon" />

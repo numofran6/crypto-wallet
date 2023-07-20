@@ -1,5 +1,41 @@
+import { useState } from 'react';
 import { Breadcrumbs } from '../breadcrumbs/Breadcrumbs';
 import { ChartCard } from './ChartCard';
+import { useBreadcrumbsContext } from '../../context/BreadcrumbsContext';
+export const menuList = [
+	{
+		title: 'day',
+		lower: '3.895',
+		higher: '7.857',
+		btcConversion: '1.483',
+		areaStroke: '#ff503d',
+		areaFill: '#ffeeee',
+	},
+	{
+		title: 'week',
+		lower: '4.895',
+		higher: '6.857',
+		btcConversion: '5.483',
+		areaStroke: '#3dff3d',
+		areaFill: '#efffee',
+	},
+	{
+		title: 'month',
+		lower: '2.895',
+		higher: '4.857',
+		btcConversion: '8.483',
+		areaStroke: '#3daeff',
+		areaFill: '#eef9ff',
+	},
+	{
+		title: 'year',
+		lower: '6.895',
+		higher: '10.857',
+		btcConversion: '11.483',
+		areaStroke: '#ff3ddb',
+		areaFill: '#ffeefd',
+	},
+];
 
 export const Chart = () => {
 	const data = [
@@ -47,16 +83,14 @@ export const Chart = () => {
 		},
 	];
 
+	const { breadcrumbData } = useBreadcrumbsContext();
+	const { lower, higher, btcConversion, areaFill, areaStroke } = breadcrumbData;
+
 	return (
 		<>
-			<Breadcrumbs menu={['day', 'week', 'month', 'year']} />
+			<Breadcrumbs {...{ menuList }} />
 
-			<ChartCard
-				data={data}
-				lower="4.895"
-				higher="6.857"
-				btcConversion="5.483"
-			/>
+			<ChartCard {...{ lower, higher, btcConversion, areaFill, areaStroke }} />
 		</>
 	);
 };

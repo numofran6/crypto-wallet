@@ -2,7 +2,14 @@ import { Area, AreaChart, ResponsiveContainer } from 'recharts';
 import { GoDotFill } from 'react-icons/go';
 import './Chart.css';
 
-export const ChartCard = ({ data, lower, higher, btcConversion }) => {
+export const ChartCard = ({
+	data,
+	lower,
+	higher,
+	btcConversion,
+	areaStroke = '#FFAB3D',
+	areaFill = '#FFF7EE',
+}) => {
 	return (
 		<div className="chart-container card-shadow">
 			<div className="chart-title">
@@ -26,7 +33,12 @@ export const ChartCard = ({ data, lower, higher, btcConversion }) => {
 						bottom: 0,
 					}}
 				>
-					<Area type="monotone" dataKey="uv" stroke="#FFAB3D" fill="#FFF7EE" />
+					<Area
+						type="monotone"
+						dataKey="uv"
+						stroke={areaStroke}
+						fill={areaFill}
+					/>
 				</AreaChart>
 			</ResponsiveContainer>
 
