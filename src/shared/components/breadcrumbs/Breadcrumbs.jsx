@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './Breadcrumbs.css';
 import { useBreadcrumbsContext } from '../../context/BreadcrumbsContext';
+import './Breadcrumbs.css';
 
 export const Breadcrumbs = ({ menuList = [] }) => {
 	const { setBreadcrumbData } = useBreadcrumbsContext();
@@ -25,9 +25,17 @@ export const Breadcrumbs = ({ menuList = [] }) => {
 					<button
 						onClick={() => handleMenuClick(i)}
 						key={i}
-						className={`breadcrumbs-menu ${
-							activeIndex === i ? 'active-menu' : ''
-						}`}
+						className="breadcrumbs-menu"
+						style={
+							activeIndex === i
+								? {
+										backgroundColor: '#aeb8c4',
+										color: '#ffffff',
+										padding: '0.3rem 0.8rem',
+										borderRadius: '5rem',
+								  }
+								: { padding: '0.3rem 0.8rem' }
+						}
 					>
 						{menu.title}
 					</button>

@@ -26,7 +26,7 @@
 }
 
 .kebab:hover {
-	color: #f3f6f9;
+	color: #222222;
 	transition: 0.3s ease-in-out;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .align-link-horizontally:hover {
-	font-weight: bold;
+	font-weight: 700;
 	transition: 0.3s ease-in-out;
 }
 

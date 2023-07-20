@@ -7,8 +7,8 @@ export const ChartCard = ({
 	lower,
 	higher,
 	btcConversion,
-	areaStroke = '#FFAB3D',
-	areaFill = '#FFF7EE',
+	areaStroke,
+	areaFill,
 }) => {
 	return (
 		<div className="chart-container card-shadow">
