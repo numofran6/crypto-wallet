@@ -1,0 +1,42 @@
+.chart-container {
+	width: 100%;
+	height: 9.5rem;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+	font-size: 0.65rem;
+	font-weight: 600;
+	margin-bottom: 1.25rem;
+
+	.chart-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 1.25rem;
+		margin-top: 1.25rem;
+		color: #cdd4db;
+	}
+
+	.chart-crypto-conversion {
+		position: absolute;
+		bottom: 1.25rem;
+		left: 1.25rem;
+		font-size: 0.75rem;
+		line-height: 1rem;
+	}
+
+	.dot {
+		width: 0.8rem;
+		height: 0.8rem;
+		margin-right: 0.2rem;
+	}
+
+	.align-horizaontal {
+		display: flex;
+		align-items: center;
+	}
+}

@@ -1,6 +1,5 @@
 import { BuySellCard, Chart, CryptoCard } from '../../shared/components';
 import { SiBitcoinsv } from 'react-icons/si';
-import './Home.css';
 
 export const Home = () => {
 	return (

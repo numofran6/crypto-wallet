@@ -1,0 +1,29 @@
+.main-nav-container {
+	position: fixed;
+	bottom: 0;
+	width: 425px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem 0;
+	border-top: 1px solid #f3f6f9;
+
+	.main-nav-links {
+		background-color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 768px;
+
+		.main-nav-icon {
+			width: 1.2rem;
+			height: 1.2rem;
+			color: #aeb8c4;
+		}
+
+		.active-link {
+			color: #4c5968;
+		}
+	}
+}

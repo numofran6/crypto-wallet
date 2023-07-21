@@ -1,5 +1,5 @@
 import { BiSolidDollarCircle } from 'react-icons/bi';
-import './BuySellCard.css';
+import './BuySellCard.scss';
 
 export const BuySellCard = ({ symbol }) => {
 	return (

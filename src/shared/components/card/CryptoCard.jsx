@@ -1,7 +1,7 @@
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { BuySellCard } from './BuySellCard';
 import { useState } from 'react';
-import './CryptoCard.css';
+import './CryptoCard.scss';
 
 export const CryptoCard = ({
 	sign,

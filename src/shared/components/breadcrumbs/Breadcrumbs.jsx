@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useBreadcrumbsContext } from '../../context/BreadcrumbsContext';
-import './Breadcrumbs.css';
+import './Breadcrumbs.scss';
 
 export const Breadcrumbs = ({ menuList = [] }) => {
 	const { setBreadcrumbData } = useBreadcrumbsContext();

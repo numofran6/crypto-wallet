@@ -1,6 +1,6 @@
 import { Area, AreaChart, ResponsiveContainer } from 'recharts';
 import { GoDotFill } from 'react-icons/go';
-import './Chart.css';
+import './Chart.scss';
 
 export const ChartCard = ({
 	data,

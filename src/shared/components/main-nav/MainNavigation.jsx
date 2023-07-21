@@ -1,6 +1,6 @@
 import { FaBell, FaCompass, FaWallet } from 'react-icons/fa';
 import { IoIosSettings } from 'react-icons/io';
-import './MainNavigation.css';
+import './MainNavigation.scss';
 
 export const MainNavigation = () => {
 	return (

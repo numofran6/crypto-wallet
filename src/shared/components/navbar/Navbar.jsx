@@ -3,7 +3,7 @@ import { IoIosArrowBack, IoIosRemoveCircleOutline } from 'react-icons/io';
 import { BiSolidEdit } from 'react-icons/bi';
 import { BsInfoSquare, BsUpload } from 'react-icons/bs';
 import { useState } from 'react';
-import './Navbar.css';
+import './Navbar.scss';
 
 export const Navbar = () => {
 	const [toggleDropdown, setToggleDropdown] = useState(false);
@@ -32,19 +32,19 @@ export const Navbar = () => {
 						</button>
 					</li>
 					<li className="dropdown-link">
-						<button className="align-link-horizontally">
+						<button className="align-link-horizontally dropdown-link-space">
 							Courier Info <BsInfoSquare className="dropdown-link-icon" />
 						</button>
 					</li>
 					<li className="dropdown-link">
-						<button className="align-link-horizontally">
+						<button className="align-link-horizontally dropdown-link-space">
 							Share <BsUpload className="dropdown-link-icon" />
 						</button>
 					</li>
 					<li className="dropdown-link-remove-btn">
 						<button
 							onClick={() => setToggleDropdown(false)}
-							className="align-link-horizontally"
+							className="align-link-horizontally dropdown-link-space"
 						>
 							Remove <IoIosRemoveCircleOutline className="dropdown-link-icon" />
 						</button>
