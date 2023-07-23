@@ -18,6 +18,20 @@
 	.buysellcard-currency {
 		width: 2.2rem;
 		height: 2.2rem;
+		border-radius: 9999px;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.buy-color {
+		background-image: linear-gradient(#18BBFA, #1C80F3);
+	}
+
+	.sell-color {
+		background-image: linear-gradient(#FE5E82, #FC2F9C);
 	}
 
 	.buysellcard-title {

@@ -19,7 +19,7 @@ main {
 }
 
 .card-shadow {
-	box-shadow: 0 25px 25px -25px rgb(0 0 0 / 0.1);
+	box-shadow: 0 25px 25px -25px rgb(0 0 0 / 0.2);
 }
 
 .page-title {
